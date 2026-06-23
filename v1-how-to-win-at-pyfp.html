@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Win at PYFP</title>
+<style>
+  :root {
+    --ground: #f3efe7;
+    --card: #ffffff;
+    --ink: #1a1626;
+    --ink-soft: #5c5668;
+    --purple: #5b2da8;
+    --purple-deep: #3d1d72;
+    --purple-tint: #ece4f7;
+    --line: #e4ddd0;
+    --gold: #b08a3e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 40px 20px 60px;
+  }
+  .sheet { max-width: 920px; margin: 0 auto; }
+
+  /* Header */
+  header { text-align: center; margin-bottom: 30px; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--purple); font-weight: 700; margin-bottom: 14px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px; font-weight: 600; line-height: 1.04;
+    letter-spacing: -0.015em; color: var(--ink);
+  }
+  .rule {
+    width: 70px; height: 3px; background: var(--gold);
+    margin: 18px auto 0; border-radius: 2px;
+  }
+
+  /* Pillars */
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 26px; }
+  .pillar {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 26px 24px 24px;
+    display: flex; flex-direction: column;
+  }
+  .num {
+    font-family: Georgia, serif; font-size: 30px; font-weight: 600;
+    color: var(--purple); line-height: 1;
+  }
+  .pillar-title {
+    font-family: Georgia, serif; font-size: 22px; font-weight: 600;
+    line-height: 1.15; color: var(--ink);
+    margin: 10px 0 16px; padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  ul { list-style: none; }
+  li {
+    position: relative; padding: 7px 0 7px 22px;
+    font-size: 15px; color: var(--ink-soft);
+  }
+  li::before {
+    content: ""; position: absolute; left: 0; top: 14px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
+  }
+  li b { color: var(--ink); font-weight: 650; }
+  .hardline { color: var(--purple-deep); font-weight: 600; }
+
+  /* Mantra band */
+  .mantra {
+    background: var(--ink); color: #fff; border-radius: 16px;
+    padding: 30px 28px; text-align: center;
+  }
+  .mantra-label {
+    font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #b9a6e0; font-weight: 700; margin-bottom: 12px;
+  }
+  .mantra-line {
+    font-family: Georgia, serif; font-size: 30px; font-weight: 600;
+    line-height: 1.25;
+  }
+  .mantra-line span { color: var(--gold); }
+
+  .foot {
+    text-align: center; color: var(--ink-soft); font-size: 12.5px;
+    letter-spacing: 0.05em; margin-top: 26px;
+  }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 36px; }
+    .pillars { grid-template-columns: 1fr; }
+    .mantra-line { font-size: 24px; }
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .pillar, .mantra { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div class="eyebrow">Position Yourself for Profit &middot; Live Event</div>
+    <h1>How to Win at PYFP</h1>
+    <div class="rule"></div>
+  </header>
+
+  <div class="pillars">
+
+    <div class="pillar">
+      <div class="num">01</div>
+      <div class="pillar-title">Show Up</div>
+      <ul>
+        <li>Log in <b>5 minutes early</b></li>
+        <li>Workbook and notes ready to go</li>
+        <li>Find a quiet space and shut out distractions</li>
+      </ul>
+    </div>
+
+    <div class="pillar">
+      <div class="num">02</div>
+      <div class="pillar-title">Camera On, Stay Present</div>
+      <ul>
+        <li>Stay <b>muted</b> unless called on</li>
+        <li>Save questions for the group coaching sessions</li>
+        <li>When called on, open with <b>"My question is&hellip;"</b> No backstory. No life stories. Just the question.</li>
+      </ul>
+    </div>
+
+    <div class="pillar">
+      <div class="num">03</div>
+      <div class="pillar-title">Play Full Out</div>
+      <ul>
+        <li><b>Be coachable</b></li>
+        <li>Implement in real time. Use this time to do the work.</li>
+        <li class="hardline">No side coaching in chat. No self-promotion. No victim mindset.</li>
+        <li>What's shared here stays here.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mantra">
+    <div class="mantra-label">The whole game in three moves</div>
+    <div class="mantra-line">Show up. <span>Camera on.</span> Play full out.</div>
+  </div>
+
+  <p class="foot">Revenue Accelerator Program &middot; Robyn Crane</p>
+
+</div>
+</body>
+</html>
